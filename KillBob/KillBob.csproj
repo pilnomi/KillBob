@@ -58,6 +58,11 @@
     <Compile Include="KillBob.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="KillBob.version">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent>xcopy /y "C:\Users\bbkre\Documents\Visual Studio 2017\Projects\KillBob\KillBob\bin\Debug\KillBob.dll" "D:\SteamLibrary\steamapps\common\Kerbal Space Program\GameData\KillBob"</PostBuildEvent>
