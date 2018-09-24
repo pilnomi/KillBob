@@ -1,6 +1,6 @@
 {
   "NAME": "Kill Bob",
-  "URL": "https://raw.githubusercontent.com/pilnomi/KillBob/tree/master/Output/KillBob/KillBob.version",
+  "URL": "https://raw.githubusercontent.com/pilnomi/KillBob/master/KillBob/KillBob.version",
   "DOWNLOAD": "https://github.com/pilnomi/KillBob/releases",
   "VERSION": {
     "MAJOR": 1,
