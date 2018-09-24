@@ -14,16 +14,16 @@ namespace KillBob
 
         public void Update()
         {
+        }
+
+        public void OnVesselChange(Vessel v)
+        {
             List<ModuleWheels.ModuleWheelSuspension> myList = FlightGlobals.ActiveVessel.FindPartModulesImplementing<ModuleWheels.ModuleWheelSuspension>();
             foreach (ModuleWheels.ModuleWheelSuspension ms in myList)
             {
-                //trackWheelSuspension(ms);
                 ms.useAutoBoost = false;
             }
+
         }
-
-
-
-
     }
 }
