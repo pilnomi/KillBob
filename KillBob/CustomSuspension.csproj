@@ -41,6 +41,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Data" />
@@ -55,16 +56,20 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="KillBob.cs" />
+    <Compile Include="KillDefaultTweakables.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="suspension.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="KillBob.cfg" />
     <None Include="KillBob.version">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>xcopy /y "C:\Users\bbkre\Documents\Visual Studio 2017\Projects\KillBob\KillBob\bin\Debug\KillBob.dll" "D:\SteamLibrary\steamapps\common\Kerbal Space Program\GameData\KillBob"</PostBuildEvent>
+    <PostBuildEvent>xcopy /y "C:\Users\bbkre\Documents\Visual Studio 2017\Projects\KillBob\KillBob\bin\Debug\KillBob.dll" "D:\SteamLibrary\steamapps\common\Kerbal Space Program\GameData\KillBob"
+xcopy /y "C:\Users\bbkre\Documents\Visual Studio 2017\Projects\KillBob\KillBob\bin\Debug\KillBob.version" "D:\SteamLibrary\steamapps\common\Kerbal Space Program\GameData\KillBob"
+xcopy /y "C:\Users\bbkre\Documents\Visual Studio 2017\Projects\KillBob\KillBob\*.cfg" "D:\SteamLibrary\steamapps\common\Kerbal Space Program\GameData\KillBob"</PostBuildEvent>
   </PropertyGroup>
 </Project>
